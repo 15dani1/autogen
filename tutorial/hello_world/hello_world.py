@@ -24,5 +24,6 @@ async def main() -> None:
     await asyncio.sleep(0.0005)  # Wait for 0.5ms
     print(response)
 
+
 if __name__ == "__main__":
     asyncio.run(main())
