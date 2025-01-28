@@ -12,9 +12,9 @@ async def main() -> None:
     
     # Initialize the OpenAI client with configuration
     client = AzureOpenAIChatCompletionClient(
-        model="gpt-4o",
+        model=os.getenv("MODEL_NAME"),
         azure_endpoint=os.getenv("AZURE_ENDPOINT"),
-        api_version="2024-06-01",
+        api_version=os.getenv("API_VERSION"),
         api_key=os.getenv("AZURE_API_KEY")
     )
 
